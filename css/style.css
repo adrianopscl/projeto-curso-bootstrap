@@ -1,59 +1,105 @@
-/*
-Error: It's not clear which file to import for '@import "slider"'.
-       Candidates:
-         _slider.scss
-         slider.scss
-       Please delete or rename all but one of these files.
-        on line 5 of scss/style.scss
+body > header {
+  padding: 25px 0; }
+  body > header > .content {
+    margin-left: -15px;
+    margin-right: -15px; }
+    body > header > .content:before, body > header > .content:after {
+      content: " ";
+      display: table; }
+    body > header > .content:after {
+      clear: both; }
+    body > header > .content > .logo-container {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        body > header > .content > .logo-container {
+          float: left;
+          width: 33.33333%; } }
+      @media (min-width: 992px) {
+        body > header > .content > .logo-container {
+          float: left;
+          width: 25%; } }
+      body > header > .content > .logo-container > .logo-container__logo {
+        width: 80%;
+        margin-left: 20%; }
+    body > header > .content > .search-container {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 0%; }
+      @media (min-width: 768px) {
+        body > header > .content > .search-container {
+          float: left;
+          width: 33.33333%; } }
+      @media (min-width: 992px) {
+        body > header > .content > .search-container {
+          float: left;
+          width: 33.33333%; } }
+      @media (min-width: 768px) {
+        body > header > .content > .search-container {
+          margin-left: 33.33333%; } }
+      @media (min-width: 992px) {
+        body > header > .content > .search-container {
+          margin-left: 41.66667%; } }
+      body > header > .content > .search-container input.search-container__input.form-control {
+        height: 45px;
+        font: 13px "Oxygen";
+        color: #cccccc;
+        margin-top: 7px;
+        border: 1px solid #dddddd; }
+body #navegacao {
+  background: #CA3034; }
+  body #navegacao > .container > #navegacao__content {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      body #navegacao > .container > #navegacao__content {
+        float: left;
+        width: 100%; } }
+    body #navegacao > .container > #navegacao__content .navbar {
+      border-radius: 0;
+      box-shadow: none;
+      border: none;
+      background: #CA3034;
+      margin-bottom: 0; }
+      body #navegacao > .container > #navegacao__content .navbar .navbar-collapse {
+        border: none; }
+        body #navegacao > .container > #navegacao__content .navbar .navbar-collapse > ul.navbar-nav > li.active > a {
+          background: #882022; }
+        body #navegacao > .container > #navegacao__content .navbar .navbar-collapse > ul.navbar-nav > li a {
+          color: #fff;
+          font: bold 15px "Oxygen"; }
+          body #navegacao > .container > #navegacao__content .navbar .navbar-collapse > ul.navbar-nav > li a:hover {
+            background: #882022; }
 
-1: @import "vendors/bootstrap/bootstrap/variables";
-2: @import "vendors/bootstrap/bootstrap/mixins";
-3: @import "variables";
-4: @import "header";
-5: @import "slider";
+#slider .item img {
+  display: block;
+  width: 100%;
+  height: auto; }
 
-Backtrace:
-scss/style.scss:5
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/import_node.rb:45:in `import'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/import_node.rb:28:in `imported_file'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/import_node.rb:37:in `css_import?'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:252:in `call'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/home/adrianopscl/.rvm/gems/ruby-2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: It's not clear which file to import for '@import \"slider\"'.\A        Candidates:\A          _slider.scss\A          slider.scss\A        Please delete or rename all but one of these files.\A         on line 5 of scss/style.scss\A \A 1: @import \"vendors/bootstrap/bootstrap/variables\";\A 2: @import \"vendors/bootstrap/bootstrap/mixins\";\A 3: @import \"variables\";\A 4: @import \"header\";\A 5: @import \"slider\";"; }
+/*# sourceMappingURL=style.css.map */
