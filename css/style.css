@@ -238,4 +238,61 @@ body #navegacao {
   #servicos > #servicos__itens > .servicos__item, #servicos > #servicos__itens > .servicos__item:hover {
     transition: all 0.5s linear; }
 
+#produtos > #produtos__itens > .produtos__item {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #c72327;
+  background-clip: content-box;
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    #produtos > #produtos__itens > .produtos__item {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 992px) {
+    #produtos > #produtos__itens > .produtos__item {
+      float: left;
+      width: 25%; } }
+  #produtos > #produtos__itens > .produtos__item > img {
+    box-shadow: 0px 18px 18px rgba(0, 0, 0, 0.2); }
+  #produtos > #produtos__itens > .produtos__item > h2 {
+    font: bold 20px "Oxygen";
+    text-align: center;
+    margin: 20px 0 10px;
+    padding: 0;
+    color: #fff; }
+  #produtos > #produtos__itens > .produtos__item > p {
+    margin: 0 0 10px;
+    text-align: center;
+    color: #ddd;
+    font: 300 13px "Oxygen"; }
+  #produtos > #produtos__itens > .produtos__item > a.read-more {
+    margin-bottom: 15px;
+    background: #fff;
+    color: #c72327;
+    font: bold 13px "Oxygen";
+    padding: 5px 0;
+    text-align: center;
+    display: block;
+    width: 78px;
+    float: right;
+    margin-right: 15px;
+    border: 2px solid #fff;
+    transition: all 0.2s linear; }
+    #produtos > #produtos__itens > .produtos__item > a.read-more:hover {
+      background: #c72327;
+      color: #fff;
+      text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
