@@ -12,23 +12,31 @@ a {
   .content:after {
     clear: both; }
 
-.container .heading {
+.container .heading,
+.container .widget {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
   @media (min-width: 992px) {
-    .container .heading {
+    .container .heading,
+    .container .widget {
       float: left;
       width: 100%; } }
-  .container .heading > h2 {
+  .container .heading > h2,
+  .container .heading > h3,
+  .container .widget > h2,
+  .container .widget > h3 {
     margin: 0 0 30px;
     font: bold 18px "Oxygen";
     color: #636363;
     position: relative;
     line-height: 30px;
     text-indent: 14px; }
-    .container .heading > h2 > span {
+    .container .heading > h2 > span,
+    .container .heading > h3 > span,
+    .container .widget > h2 > span,
+    .container .widget > h3 > span {
       display: inline-block;
       width: 8px;
       height: 30px;
@@ -294,5 +302,119 @@ body #navegacao {
       background: #c72327;
       color: #fff;
       text-decoration: none; }
+
+#blog #posts {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    #blog #posts {
+      float: left;
+      width: 58.33333%; } }
+  @media (min-width: 992px) {
+    #blog #posts {
+      float: left;
+      width: 75%; } }
+  #blog #posts > .posts__item {
+    margin-bottom: 30px; }
+    #blog #posts > .posts__item > h2 {
+      font: 300 26px "Oxygen";
+      color: #cc1f22;
+      margin: 15px 0 5px; }
+    #blog #posts > .posts__item > p {
+      font: 300 16px "Oxygen";
+      color: #878787;
+      line-height: 1.5;
+      margin-bottom: 15px; }
+    #blog #posts > .posts__item > a.read-more {
+      display: block;
+      float: right;
+      width: 140px;
+      padding: 10px 0;
+      background-color: #cd1f23;
+      text-align: center;
+      font: 300 14px "Oxygen";
+      color: #fff; }
+#blog #sidebar {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    #blog #sidebar {
+      float: left;
+      width: 41.66667%; } }
+  @media (min-width: 992px) {
+    #blog #sidebar {
+      float: left;
+      width: 25%; } }
+  #blog #sidebar > .widget > h3.widget__title {
+    font-size: 16px;
+    text-ident: 9px;
+    margin-bottom: 13px; }
+    #blog #sidebar > .widget > h3.widget__title > span {
+      width: 4px; }
+  #blog #sidebar > .widget > .widget__body {
+    width: 100%;
+    min-height: 220px;
+    background-color: #636363;
+    margin-bottom: 30px; }
+
+body > footer {
+  background: #333;
+  padding: 20px 0 95px; }
+  body > footer #footer-sidebar > .footer-widget {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      body > footer #footer-sidebar > .footer-widget {
+        float: left;
+        width: 33.33333%; } }
+    @media (min-width: 992px) {
+      body > footer #footer-sidebar > .footer-widget {
+        float: left;
+        width: 33.33333%; } }
+    body > footer #footer-sidebar > .footer-widget > p {
+      color: #777;
+      font: bold 11px "Oxygen"; }
+    body > footer #footer-sidebar > .footer-widget.footer-widget--about a {
+      display: block;
+      width: 60%; }
+    body > footer #footer-sidebar > .footer-widget.footer-widget--about p {
+      width: 75%;
+      margin: 20px 0 0; }
 
 /*# sourceMappingURL=style.css.map */
