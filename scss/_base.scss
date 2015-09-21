@@ -9,6 +9,16 @@ a {
 	@include make-row;
 }
 
+.navegacao-fixa {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background: rgba(202, 48, 52, 0.8) !important;
+}
+
+.navegacao-fixa .navbar{
+	background: transparent !important;
+}
 .container{
 	.heading,
 	.widget > .widget__title{
